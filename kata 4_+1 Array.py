@@ -13,13 +13,17 @@
 def up_array(arr):
     if len(arr) == 0:
         return None
-    x = arr.pop()
-    arr.append(x)
-    return arr
+    else:
+        s = ''
+        for i in arr:
+            s += str(i)
+        s = int(s) + 1
+    return [int(i) for i in str(s)]
 
 
 
 
 
 
-up_array([2, 3, 9])
+x = up_array([4, 3, 2, 9])
+print(x)
